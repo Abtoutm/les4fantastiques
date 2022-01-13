@@ -1,0 +1,130 @@
+/* Style du corps des pages */
+body {
+  width:70%;
+  margin: 0 auto;
+  background-image: url("green.jpg");
+  background-repeat: repeat;
+
+}
+/* Style des pragraphes et listes */
+p, li {
+  color:black;
+}
+/* Style des balises h1*/
+h1 {
+  text-align: center;
+}
+/* Style des balises h2*/
+h2 {
+  text-align: center;
+}
+/* Style des articles et bas de pages */
+article, aside, footer {
+  background-color: #c1e3bc;
+  padding: 1%;
+}
+/* Style des articles*/
+article {
+  flex: 4;
+}
+/* Style bas de page*/
+footer {
+  margin-top: 10px;
+}
+/* Style des barres de navigation*/
+nav {
+  height: 60px;
+  display: flex;
+  margin-bottom: 1px;
+  background-color: #76b3bc
+
+}
+nav ul {
+  list-style-type: none;
+  display: inline-block;
+  display: flex;
+}
+nav li {
+  float: left;
+  margin-right: 10px;
+}
+nav li:last-child {
+  border-right: none;
+}
+nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+nav a:hover {
+    background-color: #442861;
+}
+nav form {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 40px;
+}
+/* Style du contenue de la page*/
+main {
+  display: flex;
+}
+/* Style du summary utilise dans FAQ*/
+summary {
+  font-size: 1.25rem;
+  font-weight: 600;
+  background-color: #fff;
+  color: #333;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  outline: focus;
+  border-radius: 0.25rem;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+}
+details > summary::after {
+  position: absolute;
+  content: "+";
+  right: 20px;
+  font-size: 1.5rem;
+}
+details[open] > summary::after {
+  position: absolute;
+  content: "-";
+    font-size: 1.5rem;
+  right: 20px;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+/* Style du contenu des reponses dans la FAQ*/
+.faq__content {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+
+/* Style de la partie reseaux sociaux*/
+.reseaux_sociaux
+{
+  display: flex;
+}
+.reseaux_sociaux ul{
+  padding: 50px;
+  display: flex;
+  margin: auto;
+}
+.sociaux-items{
+  list-style: none;
+}
+.sociaux-items a {
+  padding:  10px 20px;
+  font-size: 40px;
+  color :#2F3A8F;
+  transition: all .25s;
+
+}
